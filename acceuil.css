@@ -38,6 +38,37 @@ header ul li a{
     color: #000;
     font-family: 'Times New Roman', Times, serif;
 }
+/* Style pour le menu déroulant */
+.dropdown-menu {
+    display: none; /* Caché par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f67e0f;
+
+    padding: 0;
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    width: 150px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e4be9a;
+}
+
+/* Afficher le menu déroulant au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .img1 {
     width: 100%; 
     height: 400px;
