@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 75px;
+   background-color: #e2753ef7;
+    color: #111;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+.logo {
+    flex: 1;
+    width: 50px;
+    height: 50px;
+    max-width: 4%;
+   
+}
+
+header ul{
+    flex: 2;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    list-style: none; 
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+   
+    
+    
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Style pour le menu déroulant */
+.dropdown-menu {
+    display: none; /* Caché par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f67e0f;
+
+    padding: 0;
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    width: 150px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e4be9a;
+}
+
+/* Afficher le menu déroulant au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+section {
+    background-image: url("image/img2.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style du formulaire */
+form {
+    background-color: rgba(228, 92, 29, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Titres */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Champs du formulaire */
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ee6d17;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #d6be6d;
+}
+.file-upload {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.file-upload img {
+    width: 100px;
+    height: auto;
+}
+
+.file-upload input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Bouton */
+button {
+    background-color: #e79436;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e46612;
+}
+footer{
+    background-color: #0f0f0f;
+    size: 10px;
+
+}
