@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajouter</title>
+    <link rel="stylesheet" href="ajouter.css">
+</head>
+<body>
+    <header>
+        <h1>recette</h1>
+    </header>
+    <main>
+        <section class="ajouter">
+            <h1>Ajouter une recette</h1>
+            <form action="#">
+                <div class="gouche">
+                    <div class="group">
+                        <label for="titre" class="text-lab">Le Nom</label><br>
+                        <input type="text" id="titre" class="item">
+                    </div>
+                    <div class="group">
+                        <label for="Categorie" class="text-lab">Catégorie</label><br>
+                        <select name="Catégorie" id="Categorie" class="item">
+                            <option value="entree">Entrée</option>
+                            <option value="plat">Plat principal</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                        
+                    </div>
+                    <div class="group">
+                        <label for="temps" class="text-lab">Temps de préparation</label><br>
+                        <input type="text" id="temps" class="item">
+                    </div>
+                    <div class="group">
+                        <label for="preparation" class="text-lab">préparation</label><br>
+                        <textarea class="item" id="preparation"></textarea>
+                    </div>
+                </div>
+                <div class="droite">
+                    <div class="group">
+                        <div class="img-conter">
+                                <div class="preview">
+                                    <img src="" alt="" id="file-image">
+                                </div>
+                                <label for="img" id="label-img">Image</label><br>
+                                <input type="file" accept="image/*" id="img" onchange="showPreview(event);">    
+                        </div>
+
+                    </div>
+                    <div class="group">
+                        <label for="ingredients" class="text-lab">Ingredients</label><br>
+                        <textarea class="item" id="ingredients"></textarea>
+                    </div>
+                </div>
+            </form>
+            <button id="btn_ajouter">Ajouter</button>
+        </section>
+       
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+<script type="text/javascript">
+    function showPreview(event){
+        if(event.target.files.length > 0){
+            var src = URL.createObjectURL(event.target.files[0]);
+            var preview = document.getElementById("file-image");
+            preview.src = src;
+            preview.style.display = "block";
+            preview.style.borderRadius = "10px";
+        }
+    }
+    
+</script>
+</html>
+
+
+
+
