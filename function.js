@@ -1,8 +1,8 @@
-// Sélecteurs
+
 const recipeForm = document.getElementById("recipeForm");
 const recipeList = document.getElementById("recipeList");
 
-// Fonction : Charger les recettes depuis localStorage
+
 function loadRecipes() {
     const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
     if (recipes.length > 0 && recipeList) {
@@ -12,21 +12,20 @@ function loadRecipes() {
     }
 }
 
-// Fonction : Afficher les recettes
+
 function renderRecipes(recipes) {
     recipeList.innerHTML = recipes.map((recipe) => `
-        <div class="col-md-4">
-            <div class="card">
-                <img src="${recipe.image}" alt="${recipe.nom}" class="card-img-top recipe-image">
-                <div class="card-body">
-                    <h5 class="card-title">${recipe.nom}</h5>
-                </div>
-            </div>
-        </div>
+            <div style="width: 100%; max-width: 300px; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+    <!-- Image -->
+    <img src="${recipe.image}" alt="${recipe.nom}" style="width: 100%; height: 200px; border-radius: 8px 8px 0 0; object-fit: cover;">
+    <!-- Titre -->
+    <h5 style="font-size: 1.2rem; font-weight: bold; margin: 15px 0; color: #333;">${recipe.nom}</h5>
+</div>
+
     `).join("");
 }
 
-// Fonction : Ajouter une nouvelle recette
+
 function addRecipe(event) {
     event.preventDefault();
 
@@ -37,7 +36,7 @@ function addRecipe(event) {
     const img = document.getElementById("img");
     const ingredients = document.getElementById("ingredients").value.trim();
 
-    // Vérification de l'image
+    
     if (!img.files[0]) {
         alert("Veuillez ajouter une image.");
         return;
@@ -56,28 +55,28 @@ function addRecipe(event) {
             image,
         };
 
-        // Récupérer les recettes existantes et ajouter la nouvelle
+        
         const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
         recipes.push(newRecipe);
 
-        // Sauvegarder les recettes dans localStorage
+       
         localStorage.setItem("recipes", JSON.stringify(recipes));
 
-        // Réinitialiser le formulaire et informer l'utilisateur
+       
         if (recipeForm) recipeForm.reset();
         alert("Recette ajoutée avec succès !");
-        window.location.href = "page_acceuil.html"; // Redirection vers l'accueil
+        window.location.href = "page_acceuil.html"; 
     };
 
     reader.readAsDataURL(img.files[0]);
 }
 
-// Événement : Charger les recettes sur la page d'accueil
+
 if (recipeList) {
     document.addEventListener("DOMContentLoaded", loadRecipes);
 }
 
-// Événement : Ajouter une recette via le formulaire
+
 if (recipeForm) {
     recipeForm.addEventListener("submit", addRecipe);
 }
