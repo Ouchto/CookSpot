@@ -1,73 +1,142 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fce4ec;
-  }
+*{
+  margin: 0;
+  padding: 0;
+
+}
+header{
+  height: 75px;
+ background-color: #e2753ef7;
+  color: #111;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+.logo {
+  flex: 1;
+  width: 50px;
+  height: 50px;
+  max-width: 4%;
+ 
+}
+
+header ul{
+  flex: 2;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  list-style: none; 
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+ 
   
-  header {
-    background-color: #f8bbd0;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-  }
-  header ul{
-    list-style: none;
-   
-  }
-  .logo {
-   display: flex;
-   justify-content: flex-end;
-    width: 50px;
-    height: 50px;
-    max-width: 4%;
-   
+  
+header ul li a{
+  text-decoration: none;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Style pour le menu déroulant */
+.dropdown-menu {
+  display: none; /* Caché par défaut */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f67e0f;
+
+  padding: 0;
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  width: 150px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e4be9a;
+}
+
+/* Afficher le menu déroulant au survol */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+main {
+  padding: 20px;
+}
+.pizza-recipe{
+  display: flex;
+  justify-content:space-between ;
+  gap: 75px;
+}
+
+ 
+.pizza-recipe h1 {
+  color: #d81b60; 
+  font-size:100px;
+  color: #000;
+}
+.pizza-recipe p{
+  font-size: 25px;
+}
+.Cate1{
+  margin-left: 60px;
+}
+.cate2{
+  margin-left: 80px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.pizza-recipe .img-pizza {
+
+  margin-top: 10px;
+  border-radius: 20px;
+ 
+ 
+}
+
+.pizza-recipe h2 {
+  margin-top: 20px;
+  color: #141313;
+  font-size: xx-large;
+}
+
+.content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.content ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+.ingredients{
+  /* width: 100%; */
+  display:flex ;
+  justify-content:space-between;
+  gap: 75px;
+  margin-left: 100px;
+
+  
+}
+.ingredients .te{
+  margin-left: 600px;
 }
   
-  header nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .pizza-recipe h1 {
-    color: #d81b60;
-  }
-  
-  .pizza-recipe .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .pizza-recipe .img-pizza {
-    width:40%;
-    border-radius: 10px;
-  }
-  
-  
-  
-  
-  .pizza-recipe h2 {
-    margin-top: 20px;
-    color: #880e4f;
-  }
-  
-  .pizza-recipe ul {
-    list-style: disc;
-    padding-left: 20px;
-  }
-  
-  .pizza-recipe ol {
-    list-style: decimal;
-    padding-left: 20px;
-  }
-  
+ 
