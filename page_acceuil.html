@@ -2,36 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
     <link rel="stylesheet" href="acceuil.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img src="image/logo.png" alt="" class="logo">
+        <img src="image/logo.png" alt="Logo" class="logo">
         <ul>
-            <li><a href="page_acceuil.html*">Accueil</a></li>
-            <li><a href="recette.html">Recette</a></li>
+            <li><a href="page_acceuil.html">Accueil</a></li>
+            <li><a href="ajouter.html">Recette</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">Catégorie</a>
                 <ul class="dropdown-menu" style="background-color: #f67e0f;">
-                    <li><a href="">Principal</a> </li>
-                    <li><a href="">Dessert</a></li>
-                    <li><a href="">Entrée</a></li>
+                    <li><a href="#">Principal</a></li>
+                    <li><a href="#">Dessert</a></li>
+                    <li><a href="#">Entrée</a></li>
                 </ul>
             </li>
         </ul>
-        
     </header>
-    <section class="img1 ">
+
+
+    <section class="img1">
+
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn" style="background: rgb(233, 161, 19);" type="submit">Search</button>
-          </form>
+        </form>
     </section>
-    <section></section>
-    <footer></footer>
+
+    <section>
+        <h1>Recettes</h1>
+        <div id="recipeList" class="row g-4">
+            <!-- Les recettes seront chargées ici -->
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="function.js"></script>
 </body>
 </html>
