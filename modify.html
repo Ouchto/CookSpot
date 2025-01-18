@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modifier</title>
+    <link rel="stylesheet" href="modify.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="image/Untitled_design__2_-removebg-preview.pnggit pull origin main
+        " alt="" class="logo">
+        <ul>
+            <li><a href="page_acceuil.html*">Accueil</a></li>
+            <li><a href="recette.html">Recette</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Catégorie</a>
+                <ul class="dropdown-menu" style="background-color: #f67e0f;">
+                    <li><a href="">Principal</a> </li>
+                    <li><a href="">Dessert</a></li>
+                    <li><a href="">Entrée</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="modifier">
+            <h1>Modifier une recette</h1>
+            <form action="#">
+                <div class="gouche">
+                    <div class="group">
+                        <label for="Nom" class="text-lab">nouveau titre</label><br>
+                        <input type="text" id="Nom" class="item">
+                    </div>
+                    <div class="group">
+                        <label for="Categorie" class="text-lab">Catégorie</label><br>
+                        <select id="Categorie" class="item">
+                            <option value="entree">Entrée</option>
+                            <option value="plat_Principal">Plat_principal</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                        
+                    </div>
+                    <div class="group">
+                        <label for="temps" class="text-lab">nouveau Temps_de_préparation</label><br>
+                        <input type="text" id="temps" class="item">
+                    </div>
+                    <div class="group">
+                        <label for="preparation" class="text-lab">nouveau préparation</label><br>
+                        <textarea class="item" id="preparation"></textarea>
+                    </div>
+                </div>
+                <div class="droite">
+                    <div class="group">
+                        <div class="img-conter">
+                                <div class="preview">
+                                    <img src="" alt="" id="file-image">
+                                </div>
+                                <label for="img" id="label-img">ajouter une nouvelle image</label><br>
+                                <input type="file" accept="image/*" id="img" onchange="showPreview(event);">    
+                        </div>
+
+                    </div>
+                    <div class="group">
+                        <label for="ingredients" class="text-lab">nouveau Ingredients</label><br>
+                        <textarea class="item" id="ingredients"></textarea>
+                    </div>
+                </div>
+            </form>
+            <button id="btn_ajouter" type="submit">Modifier</button>
+        </section>
+       
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
