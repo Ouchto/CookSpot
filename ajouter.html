@@ -12,8 +12,8 @@
     <header>
         <img src="image/logo.png" alt="" class="logo">
         <ul>
-            <li><a href="page_acceuil.html*">Accueil</a></li>
-            <li><a href="recette.html">Recette</a></li>
+            <li><a href="page_acceuil.html">Accueil</a></li>
+            <li><a href="ajouter.html">Recette</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">Catégorie</a>
                 <ul class="dropdown-menu" style="background-color: #f67e0f;">
@@ -27,7 +27,7 @@
     <main>
         <section class="ajouter">
             <h1>Ajouter une recette</h1>
-            <form action="#">
+            <form  id="recipeForm">
                 <div class="gouche">
                     <div class="group">
                         <label for="Nom" class="text-lab">Nom</label><br>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="group">
                         <label for="Categorie" class="text-lab">Catégorie</label><br>
-                        <select id="Categorie" class="item">
+                        <select id="Categorie"  class="item">
                             <option value="entree">Entrée</option>
                             <option value="plat_Principal">Plat_principal</option>
                             <option value="dessert">Dessert</option>
@@ -67,8 +67,9 @@
                         <textarea class="item" id="ingredients"></textarea>
                     </div>
                 </div>
+                <button id="btn_ajouter" type="submit">Ajouter</button>
             </form>
-            <button id="btn_ajouter" type="submit">Ajouter</button>
+            
         </section>
        
     </main>
