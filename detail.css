@@ -141,5 +141,27 @@ header ul li a{
 .ingredients .te{
   margin-left: 300px;
 }
-  
+footer {
+  background-color: #e2753ef7; 
+  color: white; 
+  text-align: center;
+  padding: 20px; 
+  font-family: Arial, sans-serif; 
+  position: relative; 
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 10px 0; 
+}
+
+footer a {
+  color: #E74C3C; 
+  text-decoration: none; 
+}
+
+footer a:hover {
+  text-decoration: underline; 
+} 
  
