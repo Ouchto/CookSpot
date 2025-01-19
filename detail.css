@@ -72,9 +72,11 @@ header ul li a{
 
 
 
-main {
+.main {
   padding: 20px;
 }
+
+.Displayrec
 .pizza-recipe{
   display: flex;
   justify-content:space-between ;
@@ -89,6 +91,7 @@ main {
 }
 .pizza-recipe p{
   font-size: 25px;
+  color: #111;
 }
 .Cate1{
   margin-left: 60px;
@@ -136,7 +139,7 @@ main {
   
 }
 .ingredients .te{
-  margin-left: 600px;
+  margin-left: 300px;
 }
   
  
